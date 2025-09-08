@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Feedback & Task Manager</h1>
+
+  <!-- Feedback Form -->
+  <section>
+    <h2>Leave Your Feedback</h2>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <p id="formError" class="error"></p>
+  </section>
+
+  <!-- To-Do List -->
+  <section>
+    <h2>Task Manager</h2>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Background Color Changer -->
+  <section>
+    <h2>Fun Section</h2>
+    <button id="colorBtn">Change Background Color</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
